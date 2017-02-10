@@ -1,0 +1,16 @@
+{
+  "name": "devgeniem/wp-cookie-notice",
+  "description": "Cookie Notice",
+  "type": "wordpress-plugin",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Miika Arponen",
+      "email": "miika@geniem.com",
+      "homepage": "https://github.com/nomafin"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  }
+}
