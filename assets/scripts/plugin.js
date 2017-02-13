@@ -11,15 +11,28 @@ window.CookieNotice = ( function( window, document ) {
 
 			var p = document.createElement('p');
 
-			p.textContent = cookie_notice_text.cookie_notice_text;
+			p.textContent = cookie_notice.cookie_notice_text;
 
 			var button = document.createElement('button');
 
-			button.textContent = cookie_notice_text.ok_text;
+			button.textContent = cookie_notice.ok_text;
 
 			p.appendChild( button );
 
 			el.appendChild( p );
+
+			if ( cookie_notice.link_url.length > 0 ) {
+				var paragraph = document.createElement('p');
+				var link = document.createElement('a');
+
+				link.setAttribute( 'href', cookie_notice.link_url );
+
+				link.textContent = cookie_notice.link_text;
+
+				paragraph.appendChild( link );
+
+				el.appendChild( paragraph );
+			}
 
 			document.body.appendChild( el );
 
@@ -27,7 +40,7 @@ window.CookieNotice = ( function( window, document ) {
 
 			document.body.style.marginBottom = app.bodyMargin;
 
-			el.addEventListener( 'click', function() {
+			button.addEventListener( 'click', function( e ) {
 				Cookies.set( 'cookie_notice', true, { expires: 365 } );
 				el.parentNode.removeChild( el );
 			});
