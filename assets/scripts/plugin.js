@@ -21,7 +21,7 @@ window.CookieNotice = ( function( window, document ) {
 
 			el.appendChild( p );
 
-			if ( cookie_notice.link_url.length > 0 ) {
+			if ( cookie_notice.link_url ) {
 				var paragraph = document.createElement('p');
 				var link = document.createElement('a');
 
