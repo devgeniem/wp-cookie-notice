@@ -50,7 +50,8 @@ class CookieNotice {
 			'cookie_notice_text' => apply_filters( 'geniem/cookie_notice/text', self::$cookie_notice_text ),
 			'ok_text' => apply_filters( 'geniem/cookie_notice/ok', self::$ok_text ),
 			'link_text' => apply_filters( 'geniem/cookie_notice/link', self::$link_text ),
-			'link_url' => apply_filters( 'geniem/cookie_notice/url', self::$link_url )
+			'link_url' => apply_filters( 'geniem/cookie_notice/url', self::$link_url ),
+			'expires' => apply_filters( 'geniem/cookie_notice/expires', 365 )
 		];
 
 		wp_localize_script( 'geniem_cookie_notice', 'cookie_notice', $settings );
