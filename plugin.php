@@ -5,7 +5,7 @@
  * Author: Miika Arponen / Geniem Oy
  * Author URI: http://www.geniem.com
  * Text Domain: geniem-cookie-notice
- * Version: 0.0.5
+ * Version: 0.0.6
  */
 
 namespace Geniem;

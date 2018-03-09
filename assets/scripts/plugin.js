@@ -40,8 +40,10 @@ window.CookieNotice = ( function( window, document ) {
 
 			document.body.style.marginBottom = app.bodyMargin;
 
+			var cookieExpires = parseInt( cookie_notice.expires );
+
 			button.addEventListener( 'click', function( e ) {
-				Cookies.set( 'cookie_notice', true, { expires: cookie_notice.expires } );
+				Cookies.set( 'cookie_notice', true, { expires: cookieExpires } );
 				el.parentNode.removeChild( el );
 			});
 		}
