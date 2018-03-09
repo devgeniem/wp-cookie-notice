@@ -6,31 +6,31 @@ Cookie notice banner.
 
 ## Avalaible filters
 
-###Banner text
+### Banner text
 
 ```
 geniem/cookie_notice/text
 ```
 
-###Button text
+### Button text
 
 ```
 geniem/cookie_notice/ok
 ```
 
-###Cookie policy link text
+### Cookie policy link text
 
 ```
 geniem/cookie_notice/link
 ```
 
-###Cookie policy link url
+### Cookie policy link url
 
 ```
 geniem/cookie_notice/url
 ```
 
-###Days how long the cookie policy cookie is valid
+### Days how long the cookie policy cookie is valid
 
 ```
 geniem/cookie_notice/expires
