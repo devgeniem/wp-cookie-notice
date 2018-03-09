@@ -41,7 +41,7 @@ window.CookieNotice = ( function( window, document ) {
 			document.body.style.marginBottom = app.bodyMargin;
 
 			button.addEventListener( 'click', function( e ) {
-				Cookies.set( 'cookie_notice', true, { expires: 365 } );
+				Cookies.set( 'cookie_notice', true, { expires: cookie_notice.expires } );
 				el.parentNode.removeChild( el );
 			});
 		}
