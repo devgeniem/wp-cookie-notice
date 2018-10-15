@@ -3,7 +3,7 @@ Plugin's changelog
 
 Based on a project [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
-## Unreleased
+## [1.0.0] - 2018-10-15
 
 ### Modified
 - Added inner wrapping element to markup. Also added some classnames to elements.
