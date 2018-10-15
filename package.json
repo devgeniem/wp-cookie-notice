@@ -1,6 +1,6 @@
 {
   "name": "wp-cookie-notice",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "WordPress Plugin to display EU Cookie Notice",
   "main": "webpack.config.js",
   "private": true,
