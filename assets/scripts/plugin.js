@@ -6,12 +6,10 @@ window.CookieNotice = ( function( window, document ) {
 
 		if ( 'undefined' == typeof Cookies.get('cookie_notice') ) {
 
-			var elOuter = document.createElement('div');
+			app.cookieNoticeElem = document.createElement('div');
 
-			app.cookieNoticeElem = elOuter;
-
-			elOuter.setAttribute( 'id', 'geniem-cookie-notice' );
-			elOuter.setAttribute( 'class', 'geniem-cookie-notice' );
+			app.cookieNoticeElem.setAttribute( 'id', 'geniem-cookie-notice' );
+			app.cookieNoticeElem.setAttribute( 'class', 'geniem-cookie-notice' );
 
 			var el = document.createElement( 'div' );
 
@@ -53,9 +51,9 @@ window.CookieNotice = ( function( window, document ) {
 				el.appendChild( paragraph );
 			}
 
-			elOuter.appendChild( el );
+			app.cookieNoticeElem.appendChild( el );
 
-			document.body.appendChild( elOuter );
+			document.body.appendChild( app.cookieNoticeElem );
 
 			// Get the original body margin, so that it may be resized later on.
 			app.originalBodyMarginBottom = window.getComputedStyle(document.body).getPropertyValue('margin-bottom');
@@ -68,7 +66,7 @@ window.CookieNotice = ( function( window, document ) {
 
 			button.addEventListener( 'click', function( e ) {
 				Cookies.set( 'cookie_notice', true, { expires: cookieExpires } );
-				elOuter.parentNode.removeChild( elOuter );
+				app.cookieNoticeElem.parentNode.removeChild( app.cookieNoticeElem );
 
 				// Restore body bottom margin.
 				document.body.style.marginBottom = app.originalBodyMarginBottom;
