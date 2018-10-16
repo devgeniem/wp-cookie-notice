@@ -3,6 +3,11 @@ Plugin's changelog
 
 Based on a project [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
+## [UNRELEASED]
+
+### Modified
+- Forced updates of npm packages.
+
 ## [1.0.0] - 2018-10-15
 
 ### Modified
