@@ -3,10 +3,15 @@ Plugin's changelog
 
 Based on a project [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
-## [UNRELEASED]
+## [1.0.2] - 2018-10-16
 
 ### Modified
 - Forced updates of npm packages.
+
+## [1.0.1] - 2018-10-16
+
+### Modified
+- Changed licensi in composer.json.
 
 ## [1.0.0] - 2018-10-15
 
