@@ -2,7 +2,7 @@
   "name": "devgeniem/wp-cookie-notice",
   "description": "Cookie Notice",
   "type": "wordpress-plugin",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-only",
   "authors": [
     {
       "name": "Miika Arponen",
