@@ -3,6 +3,9 @@ Plugin's changelog
 
 Based on a project [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
+### Fixed
+- Added php5 compatibility
+
 ## [1.0.2] - 2018-10-16
 
 ### Modified

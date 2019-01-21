@@ -33,7 +33,7 @@ class CookieNotice {
 
 		$plugin = \get_plugin_data( __FILE__ );
 
-		self::$version = $plugin['Version'] ?? '';
+		self::$version = array_key_exists( 'Version', $plugin ) ? $plugin['Version'] : '';
 
 		self::$cookie_notice_text = __( 'We use cookies. By browsing our site you agree to our use of cookies.', 'geniem-cookie-notice' );
 		self::$ok_text = __( 'OK', 'geniem-cookie-notice' );
