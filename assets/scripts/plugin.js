@@ -53,7 +53,7 @@ window.CookieNotice = ( function( window, document ) {
 
 			app.cookieNoticeElem.appendChild( el );
 
-			document.body.appendChild( app.cookieNoticeElem );
+			document.body.prepend( app.cookieNoticeElem );
 
 			// Get the original body margin, so that it may be resized later on.
 			app.originalBodyMarginBottom = window.getComputedStyle(document.body).getPropertyValue('margin-bottom');

@@ -3,6 +3,11 @@ Plugin's changelog
 
 Based on a project [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
+## [1.0.4] - 2019-05-20
+
+### Modified
+- Moved the cookie notice as the first element in the DOM.
+
 ## [1.0.3] - 2019-01-22
 
 ### Fixed
