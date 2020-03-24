@@ -10,6 +10,7 @@ window.CookieNotice = ( function( window, document ) {
 
 			app.cookieNoticeElem.setAttribute( 'id', 'geniem-cookie-notice' );
 			app.cookieNoticeElem.setAttribute( 'class', 'geniem-cookie-notice' );
+			app.cookieNoticeElem.setAttribute( 'lang', cookie_notice.lang );
 
 			var el = document.createElement( 'div' );
 
