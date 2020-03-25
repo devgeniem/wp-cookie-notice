@@ -3,7 +3,7 @@ Plugin's changelog
 
 Based on a project [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
-## [1.0.5] - 2020-03-24
+## [1.0.5] - 2020-03-25
 
 ### Added
 - Added the site language as a lang-parameter for the cookie notice wrapper.
