@@ -1,11 +1,13 @@
 {
   "name": "wp-cookie-notice",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "WordPress Plugin to display EU Cookie Notice",
   "main": "webpack.config.js",
   "private": true,
   "author": "Miika Arponen / Geniem Oy",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --progress"
+  },
   "dependencies": {
     "js-cookie": "^2.1.3",
     "js-cookies": "^1.0.4"

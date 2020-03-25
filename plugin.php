@@ -11,10 +11,11 @@
 namespace Geniem;
 
 require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
- 
+
 class CookieNotice {
 	private static $instance;
 
+	private static $lang;
 	private static $cookie_notice_text;
 	private static $ok_text;
 	private static $link_text;
@@ -35,6 +36,7 @@ class CookieNotice {
 
 		self::$version = array_key_exists( 'Version', $plugin ) ? $plugin['Version'] : '';
 
+		self::$lang = \get_bloginfo( 'language' );
 		self::$cookie_notice_text = __( 'We use cookies. By browsing our site you agree to our use of cookies.', 'geniem-cookie-notice' );
 		self::$ok_text = __( 'OK', 'geniem-cookie-notice' );
 		self::$link_text = __( 'See details.', 'geniem-cookie-notice' );
@@ -47,6 +49,7 @@ class CookieNotice {
 		wp_register_script( 'geniem_cookie_notice', plugin_dir_url( __FILE__ ) .'dist/plugin.js', [], self::$version, true );
 
 		$settings = [
+			'lang' => apply_filters( 'geniem/cookie_notice/lang', self::$lang ),
 			'cookie_notice_text' => apply_filters( 'geniem/cookie_notice/text', self::$cookie_notice_text ),
 			'ok_text' => apply_filters( 'geniem/cookie_notice/ok', self::$ok_text ),
 			'link_text' => apply_filters( 'geniem/cookie_notice/link', self::$link_text ),
